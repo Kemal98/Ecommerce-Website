@@ -16,4 +16,7 @@
 - Support chat, communication between admin and users.
 
 
+-Admin login: password:Admin123, email:admin@gmail.com
+
+
 
