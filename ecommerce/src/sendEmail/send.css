@@ -1,0 +1,333 @@
+/* click send */
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  background: #ee7e2c;
+  border: 1px solid #ee7e2c;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+  color: #fff;
+}
+
+.add-btn:hover {
+  color: #fff;
+  width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+  transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 10px;
+  top: calc(50% - 2px);
+  background: rgb(255, 255, 255);
+}
+
+.add-btn::after {
+  right: 14px;
+  overflow: hidden;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+  left: 14px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+  outline: none;
+}
+
+.btn-txt {
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+  width: 4px;
+  border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+  opacity: 2;
+}
+
+.add-icon::after,
+.add-icon::before {
+  transition: all 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 2px;
+  top: calc(50% - 10px);
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.add-icon::before {
+  left: 22px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+  right: 22px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+  left: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+  right: 15px;
+  height: 4px;
+  top: calc(50% - 2px);
+}
+/*  */
+.send-btn {
+  z-index: 11;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #ee7e2c;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+   
+   .send-btn span {
+    display: block;
+    margin-left: 0.1em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .send-btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+   }
+   
+   .send-btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+   }
+   
+   .send-btn:hover svg {
+    transform: translateX(0.3em) rotate(45deg) scale(1.1);
+   }
+   
+   .send-btn:hover span {
+    transform: translateX(2em);
+   }
+   
+   .send-btn:active {
+    transform: scale(0.95);
+   }
+   
+   @keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+   }
+   .card_ {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: #fff0;
+    background-clip: border-box;
+    border: 1pxsolidrgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    align-items: center;
+}
+  
+  .card > * {
+    margin: 0;
+  }
+  
+  .card__title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 4px;
+  }
+  
+  .card__content {
+    font-size: 13px;
+    line-height: 17px;
+    color: #fff;;
+    text-align: center;
+  }
+  
+  .card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .card__form input {
+    outline: 0;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 0.3em;
+    border-radius: 14px;
+    border: 1px solid #333;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .input-text {
+    outline: 0;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 0.3em;
+    border-radius: 14px;
+    border: 1px solid #333;
+    color: black;
+  }
+
+  textarea.form-control {
+    margin-bottom: 10px;
+
+  }
+  .card__form button {
+    border: 0;
+    background: #ee7e2c;
+    color: rgb(0, 0, 0);
+    padding: 0.68em;
+    border-radius: 14px;
+    font-weight: bold;
+    width: 11rem;
+  }
+  
+  .sign-up:hover {
+    opacity: 0.8;
+  } 
+  .container_modal_acitve_card {
+
+    position: fixed;
+    color: #fff;
+    /* position: absolute; */
+    display: flex;
+    right: 0;
+    box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 11%);
+    /* width: 100%; */
+    border-radius: 13px;
+    margin-top: 12rem;
+    bottom: 4rem;
+    /* width: 100%; */
+    /* left: 0; */
+    justify-content: flex-end;
+    border: none;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    background: #042246db;
+    border: none;
+  }
+
+
+.card-position {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+.p_h1Tag {
+
+}
+
+.close-btne {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background-image: url();
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.close-btne:hover {
+  color:red;
+}
+
+@media screen and (max-width:500px) {
+  .send-message {
+    width: 32%;
+    right: none;
+    font-size: 1rem;
+  }
+}
+
+
+
+.container_message {
+    /* background: orange; */
+    display: flex;
+    padding: 2px 16px 0px 0px;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.container_message  button {
+  margin: 5px;
+}
+
+.container_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_image {
+  display: flex;
+  border: none;
+  background-color: #ffdead00;
+  align-items: center;
+  flex-direction: column;
+  width: 11rem;
+}
+
+.btn_image img {
+  width: 5rem;
+
+}
+
+.btn_image:hover {
+  cursor: pointer;
+}
+
+.btn_image img:target {
+  font-weight: 500;
+}
