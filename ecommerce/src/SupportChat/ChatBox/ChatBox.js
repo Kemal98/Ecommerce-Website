@@ -127,7 +127,7 @@ const ChatBox = () => {
      <div className="card_">
         <div className="bodyCard_">
                   <h1 className="card__title">Support Chat</h1>
-                  <Col className="text-end">
+                  <div className="text-end">
                 <Button
                   className="btn-sm btn-secondary"
                   type="button"
@@ -135,7 +135,7 @@ const ChatBox = () => {
                 >
                   x
                 </Button>
-              </Col>
+              </div>
                 {/* <Col className="text-end">
                 <Button className="btn-sm btn-secondary" type='button' onClick={closeHandler}> x </Button>
                 </Col> */}

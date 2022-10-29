@@ -154,6 +154,7 @@ hr.hr-1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .product_info_all div{
@@ -189,4 +190,56 @@ hr.hr-1 {
     font-size: 2rem;
     font-weight: 400;
 
+  }
+
+
+
+
+  @media only screen and (max-width: 700px) {
+    .img_logo_ img {
+      width: 8rem;
+      height: 2rem;
+  }
+
+  .nav_admin h2 {
+    font-size: 1rem;
+  }
+
+  .img_logo_ {
+    width: 22%;
+  }
+  .nav_admin h2 {
+    width: 7rem;
+  }
+
+  .listOrder {
+    width: 57vh;
+  }
+
+  .product_info_all div {
+    padding: 0;
+  }
+  .productEdit {
+    margin: 5px;
+  }
+  .scrollProduct {
+    max-height: 10rem;
+    height: 5rem;
+  }
+
+  .info_ {
+    display: flex;
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    letter-spacing: 2px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buyerInfo {
+  margin: 0.5rem;
+}
   }

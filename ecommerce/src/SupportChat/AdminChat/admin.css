@@ -84,6 +84,11 @@ h2 {
   
 }
 
+
+.chatSupportBody {
+    margin: 10px;
+}
+
 .chatInput {
     -webkit-appearance: none;
     appearance: none;
@@ -166,11 +171,12 @@ h2 {
 }
 
 .btn_input {
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
+
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        width: 100%;
+    
 }
 #info {
     background-color: #7dabf7;
@@ -229,4 +235,54 @@ span > a {
 
 .listGroupe {
 
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .listUsers {
+        width: 30%;
+     
+    }
+    .listGroupe {
+           position: relative;
+        /* display: block; */
+        display: flex;
+        margin: 4px;
+        padding: 0.55rem 2.25rem;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.125);
+        align-items: center;
+        flex-direction: column;
+        margin: -6px;
+    }
+
+    .chatUsers {
+        width: 80%;
+}
+.supportLive {
+    display: none;
+}
+
+.nav_admin h2 {
+    text-align: center;
+    width: 9rem;
+}
+
+
+.nav_admin h2 {
+    font-size: 12px;
+    font-weight: 600;
+}
+.nav_admin {
+    padding: 0px;
+}
+.container-fludi {
+    margin: 0;
+    padding: 0;
+}
+
+.chatSupportBody {
+    margin: 5px;
+}
 }

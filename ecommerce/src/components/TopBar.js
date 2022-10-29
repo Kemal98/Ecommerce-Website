@@ -31,14 +31,12 @@ const ModalOthes = () => {
     <div className='col-full'>
        <ul>
         <li><span> CONTACT CENTER: 0800 3 35445 / DIGITAL CODES: 034435344 </span></li>
-        <li><a>CONTACT</a></li>
        </ul>
        <ul>
 
         <li><a className='before_none' onClick={ModalOthes}>DELIVERY</a></li>
 
         
-        <li><a>SERVISE</a></li>
         <li><a onClick={openModal}>HOW TO BUY THE PRODUCT</a></li>
         <Modal toggle={modalState} closeModal={closeModal}/>
         <ModalOthers modalOthers={modalOthers} closeOthers={closeOthers}/>

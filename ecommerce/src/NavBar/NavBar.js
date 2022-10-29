@@ -22,7 +22,7 @@ const navigate = useNavigate()
             <div className='nav-header'>
                 <img src={logo} alt=""/>
              </div>
-            {!user && <div className='links'>
+            {!user && <div className='links linksMob'>
 
                 <span><Link to="/signup" className='navlink'>SIGN UP</Link></span>
                 <span><Link to="/login" className='navlink'>LOGIN</Link></span>

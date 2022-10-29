@@ -120,7 +120,7 @@ const AdminPage = () => {
   };
   return (
     <>
-   <Container fluid className="chatSupportBody">
+   <div className="chatSupportBody">
       <nav>
         <div className="nav_admin">
           <div className="img_logo_">
@@ -216,7 +216,7 @@ const AdminPage = () => {
         
        </div>
     </div>
-   </Container>
+   </div>
     </>
   )
 }
